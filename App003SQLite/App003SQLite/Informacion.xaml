@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          
+           
+             
+             x:Class="App003SQLite.Informacion">
+
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Center">
+
+            <StackLayout Padding="0">
+                <Frame Margin="10">
+                    <StackLayout>
+                        <Entry IsVisible="false"  Text="{Binding Id}"/>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Nombre" Grid.Row="0" Grid.Column="1" Text="{Binding Name}"/>
+
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Apellido" Grid.Row="1" Grid.Column="1" Text="{Binding Apellido}"/>
+
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Correo" Grid.Row="2" Grid.Column="1" Text="{Binding Correo}"/>
+
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Edad" Grid.Row="3" Keyboard="Numeric" Grid.Column="1" Text="{Binding Edad}"/>
+
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Direccion" Grid.Row="4" Grid.Column="1" Text="{Binding Direccion}" />
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+
+                            <Entry Placeholder="Puesto" Grid.Row="5" Grid.Column="1" Text="{Binding Puesto}" />
+                        </StackLayout>
+                        <StackLayout Margin="10"  Orientation="Vertical">
+                            <Button Text="Limpiar" BackgroundColor="Green" Command="{Binding ClearCommand }"></Button>
+                            <Button Text="Delete"  BackgroundColor="Green" Command="{Binding DeleteCommand }"></Button>
+                            <Button Text="Update"  BackgroundColor="Green" Command="{Binding UpdateCommand }"></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+                </Frame>
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
