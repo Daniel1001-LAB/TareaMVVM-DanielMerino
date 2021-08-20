@@ -12,33 +12,33 @@ namespace App003SQLite.controller
 
      
 
-        public Task<List<Pago>> GetReadPago()
+        public Task<List<Personas>> getReadPersonas()
         { 
-            return conn.GetConnectionAsync().Table<Pago>().ToListAsync();
+            return conn.GetConnectionAsync().Table<Personas>().ToListAsync();
         }
 
-        public Task<Pago> getPersonasId(int id)
+        public Task<Personas> getPersonasId(int id)
         {
             return conn
                 .GetConnectionAsync()
-                .Table<Pago>()
-                .Where(item => item.id_pago == id)
+                .Table<Personas>()
+                .Where(item => item.id == id)
                 .FirstOrDefaultAsync(); 
         }
 
-        public Task<int> getPersonasUpdateId(Pago pago)
+        public Task<int> getPersonasUpdateId(Personas personas)
         {
             return conn
                 .GetConnectionAsync()
-                .UpdateAsync(pago);
+                .UpdateAsync(personas);
               
         }
 
-        public Task<int> Delete(Pago pago)
+        public Task<int> Delete(Personas personas)
         {
             return conn
                 .GetConnectionAsync()
-                .DeleteAsync(pago);
+                .DeleteAsync(personas);
         }
 
 

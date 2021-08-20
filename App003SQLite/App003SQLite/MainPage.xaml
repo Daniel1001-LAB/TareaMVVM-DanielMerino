@@ -14,7 +14,7 @@
     <StackLayout FlexLayout.AlignSelf="Center">
         <Frame Margin="10" Padding="15" CornerRadius="10">
 
-            <Label Text="Nuevo pago" HorizontalTextAlignment="Start" TextColor="black" FontFamily="bold" FontSize="30"/>
+            <Label Text="Registro de empleados" HorizontalTextAlignment="Start" TextColor="black" FontFamily="bold" FontSize="30"/>
         </Frame>
 
         <ScrollView BackgroundColor="White">
